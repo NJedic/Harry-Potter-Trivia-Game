@@ -27,16 +27,17 @@ h1{
 #mainGame{
 	position: absolute;
 	z-index: 2;
-	top: 225px;
+	top: 175px;
 	text-align: center;
 	font-family: 'Tangerine', cursive;
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: bold;
 }
 
 #timer{
 	font-family: 'Cinzel Decorative', cursive;
 	font-size: 35px;
+	padding-bottom: 30px;
 }
 
 #submit{
@@ -46,5 +47,11 @@ h1{
 	text-shadow: 5px 5px black;
 	font-weight: normal;
 	background-color: transparent;
-	margin-bottom: 200px;
+
+}
+
+/*questions*/
+.radio-inline{
+	vertical-align: baseline;
+	padding-bottom: 10px;
 }
