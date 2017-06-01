@@ -1,0 +1,36 @@
+/*Background*/
+body{
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ca/77/ed/ca77ed1d7f2b885f8d2526d4e80802f2.jpg");
+}
+
+/*Header*/
+h1{
+	font-family: 'Cinzel Decorative', cursive;
+	color: white;
+	font-size: 150px;
+	text-shadow: 5px 5px black;
+	margin: 0;
+	text-align: center;
+}
+
+.page-header{
+	border-bottom: none;
+}
+
+/*Body*/
+#bkgdScroll{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+#mainGame{
+	position: absolute;
+	z-index: 2;
+	top: 225px;
+	text-align: center;
+	font-family: 'Tangerine', cursive;
+	font-size: 30px;
+	font-weight: bold;
+
+}

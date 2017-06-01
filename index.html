@@ -13,10 +13,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- Link to Reset CSS -->
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<!-- Link to Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Tangerine" rel="stylesheet">
 <!-- Link to Relative CSS -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+
 	<!-- Header -->
 	<div class="page-header">
 		<h1>Potions O.W.L.</h1>
@@ -26,18 +29,38 @@
 	<!-- Main Container -->
 	<div class="container">
 		<div class="row">
-			<div id="buttons">
-				<button id="start">Click Here to Begin</button>
+			<div class="col-md-12">
+				<img id="scroll" alt="Scroll" src="http://www.glyniliffe.com/wp-content/uploads/2013/07/scroll-large-bottom.png">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-10" id="mainBody">
+						<p>
+							Inside this scroll is the exam you've spent the last five years of your academic life preparing for.
+							<br>
+							<strong>Beware</strong> - it will not be easy.
+							<br>
+							You will have 2 minutes to complete the multiple choice section of the exam after which your grades will be diplayed and you will move on to the practical portion of your examination.
+							<br>
+							Good Luck.
+							<br>
+							You will need it.
+						</p>
+						<br>
+						<button id="start">Click Here to Begin</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
 
+<!-- JavaScript for this page-->
+<script type="text/javascript">
 
+	$("#start").on("click", function(){
+	location.href="main_game.html"
+});
 
-
-
-<!-- Link to relative JavaScript -->
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+</script>
 </body>
 </html>
