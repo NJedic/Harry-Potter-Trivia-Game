@@ -1,0 +1,40 @@
+/**Body of page*/
+body{
+	background-image: url("http://4.bp.blogspot.com/-h22ymUmLTqY/VkYkSmje5xI/AAAAAAAAf4Y/4QDYShG-1hI/s1600/IMG_1822.JPG");
+}
+
+/*Header*/
+h1{
+	font-family: 'Cinzel Decorative', cursive;
+	color: white;
+	font-size: 150px;
+	text-shadow: 5px 5px black;
+	margin: 0;
+	text-align: center;
+}
+
+.page-header{
+	border-bottom: none;
+}
+
+/*Body*/
+#bkgdScroll{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+#mainGame{
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	top: 225px;
+	font-family: 'Tangerine', cursive;
+	font-size: 45px;
+	font-weight: bold;
+
+}
+
+h2{
+	font-size: 85px;
+}

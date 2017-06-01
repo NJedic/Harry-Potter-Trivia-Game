@@ -32,5 +32,19 @@ h1{
 	font-family: 'Tangerine', cursive;
 	font-size: 30px;
 	font-weight: bold;
+}
 
+#timer{
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 35px;
+}
+
+#submit{
+	color: white;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 35px;
+	text-shadow: 5px 5px black;
+	font-weight: normal;
+	background-color: transparent;
+	margin-bottom: 200px;
 }
