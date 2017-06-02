@@ -42,54 +42,39 @@ $(document).ready(function(){
   		//Loop through all of the buttons
   		for(var i = 1; i <= 44; i++) {
   			//setting a variable to represent the answer buttons by calling a universal name assignment
-  			var buttons = $("questions"+i);
+  			var buttons = $('[name="question ' + i + '"]');
+  			var hasCheck = false;
+  			console.log(buttons);
   				//Looping through the individual buttons
  					for(var j = 0; j < buttons.length; j++) {
- 						//Setting a variable to represent the button
-    				var radio = buttons[j];
-    					//if the button is checked and the assigned value is "true"...
-   						if((radio).attr("value") == "true" && radio.checked) {
-      					//add one to the correctAnswers
-      					correctAnswers++
-      				}
-      					//otherwise add one to the incorrect answers
-      				else{
-      					incorrectAnswers++
-      				}
-      					//otherwise, if it's unchecked, add one to the unanswered questions
-      				if(!radio.checked){
-      					unansweredQuestions++
-      				}
-  				}
-			}       
-    	
-      	// //Then loop through all of the buttons
-       //  for(var j = 0; j < 45; j++){
-       //  		//If a button is clicked...
-       //      if(buttons[j].checked){
-       //      		//Set Boolean to true
-       //          hasClick = true;
-       //          //if the button has a value of "true"...
-       //          if($(buttons[j]).attr("value") == "true"){
-       //              //add 1 to the Correct Answers
-       //              correctAnswers++;
-       //          }
-       //          		//otherwise, add 1 to the Incorrect Answers 
-       //          else{
-       //              incorrectAnswers++;
-       //          }
-       //      }
-       //  }
-       //  //if a button hasn't been clicked...
-       //  if(!hasClick){
-       //  		//add 1 to the Unanswered Questions
-       //      unansweredQuestions++;
-       //  }
+ 						
+ 						// console.log(buttons[j]);
 
-       //        console.log(correctAnswers);
-       //        console.log(incorrectAnswers);
-       //        console.log(unansweredQuestions);
-  
+    				if(buttons[j].checked){
+    					hasCheck = true;
+    					console.log('check works');
+	    					//if the button is checked and the assigned value is "true"...
+	   						if($(buttons[j]).attr("value") == "true") {
+	      					//this.value ==
+	      					//add one to the correctAnswers
+	      					correctAnswers++;
+	      				}
+	      					//otherwise add one to the incorrect answers
+	      				else{
+	      					incorrectAnswers++;
+	      				}
+	      					//otherwise, if it's unchecked, add one to the unanswered questions
+	      				
+      			}
+      			
+  				}
+
+  				// if(buttons!=hasCheck){
+	     //  					unansweredQuestions++;
+	     //  					console.log(unansweredQuestions);
+      // 					}
+			}       
+   
                
         console.log(correctAnswers);
         console.log(incorrectAnswers);
