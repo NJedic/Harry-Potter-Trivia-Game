@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	//..the timer begins to countdown from 180 seconds
 	//First we set a variable to hold that number
-	var number = 5;
+	var number = 15;
 	//Variable that holds interval ID
 	var intervalID;
 	//The run function sets an interval that runs the decrement function once a second
@@ -60,10 +60,10 @@ $(document).ready(function(){
     window.scrollTo(0, 0);
 
     //Render results to the DOM
-    $("#mainGame").html("<h4>Your Results</h4>");
-    $("#mainGame").append("<h5>Correct Answers: </h5>" + correctAnswers);
-    $("#mainGame").append("<h5>Incorrect Answers: </h5>" + incorrectAnswers);
-    $("#mainGame").append("<h5>Questions Unanswered: </h5>" + unansweredQuestions);
+    $("#mainGame").html("<h4>The Results of Your Examination Are:</h4>");
+    $("#mainGame").append("<h5>Correct Answers: " + correctAnswers + "</h5>");
+    $("#mainGame").append("<h5>Incorrect Answers: " + incorrectAnswers + "</h5>");
+    $("#mainGame").append("<h5>Questions Unanswered: " + unansweredQuestions + "</h5>");
       }
     }
   //Execute the run funtion
@@ -115,10 +115,10 @@ $(document).ready(function(){
     window.scrollTo(0, 0);
 
     //Render results to the DOM
-    $("#mainGame").html("<h4>Your Results</h4>");
-    $("#mainGame").append("<h5>Correct Answers: </h5>" + correctAnswers);
-    $("#mainGame").append("<h5>Incorrect Answers: </h5>" + incorrectAnswers);
-    $("#mainGame").append("<h5>Questions Unanswered: </h5>" + unansweredQuestions);
+    $("#mainGame").html("<h4>The Results of Your Examination Are:</h4>");
+    $("#mainGame").append("<h5>Correct Answers: " + correctAnswers + "</h5>");
+    $("#mainGame").append("<h5>Incorrect Answers: " + incorrectAnswers + "</h5>");
+    $("#mainGame").append("<h5>Questions Unanswered: " + unansweredQuestions + "</h5>");
 
   })
 

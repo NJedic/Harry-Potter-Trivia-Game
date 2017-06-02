@@ -58,13 +58,16 @@ h1{
 
 /*Results*/
 h4{
+	text-align: none;
 	font-family: 'Cinzel Decorative', cursive;
-	font-size: 35px;
-	padding-left: 350px;
+	text-shadow: 2px 2px white;
+	font-size: 45px;
+	padding-bottom: 15px;
+	
 }
 
 h5{
+	text-align: none;
 	font-family: 'Tangerine', cursive;
-	font-size: 50px;
-	padding-left: 350px;
+	font-size: 40px;
 }
