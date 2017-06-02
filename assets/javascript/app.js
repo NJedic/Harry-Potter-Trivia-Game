@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	//..the timer begins to countdown from 180 seconds
 	//First we set a variable to hold that number
-	var number = 20;
+	var number = 5;
 	//Variable that holds interval ID
 	var intervalID;
 	//The run function sets an interval that runs the decrement function once a second
@@ -17,7 +17,55 @@ $(document).ready(function(){
       $("#timer").html(number);
       //  Once number hits zero...
       if (number === 0) {
-      	// ////////////////////////////////////
+      	//Set the correct answers count to zero
+  	correctAnswers = 0;
+  	//Set the incorrect answers count to zero
+  	incorrectAnswers = 0;
+  	//Set the number of unanswered questions count to zero
+  	unansweredQuestions = 11;
+  		//Loop through all of the buttons
+  		for(var i = 1; i <= 44; i++) {
+  			//setting a variable to represent the answer buttons by calling a universal name assignment
+  			var buttons = $('[name="question ' + i + '"]');
+  			//Boolean to represent whether there are buttons checked
+  			var hasCheck = false;
+  			// console.log(buttons);
+  				//Looping through the individual buttons
+ 					for(var j = 0; j < buttons.length; j++) {
+ 						
+ 						// console.log(buttons[j]);
+ 						//If a button is checked..
+    				if(buttons[j].checked){
+    					//Set Boolean to true
+    					hasCheck = true;
+    					// console.log('check works');
+	    					//if the button is checked and the assigned value is "true"...
+	   						if($(buttons[j]).attr("value") == "true") {
+	      					//add one to the correctAnswers
+	      					correctAnswers++;
+	      				}
+	      					//otherwise add one to the incorrect answers
+	      				else{
+	      					incorrectAnswers++;
+	      				}
+	   
+	      				if(buttons=hasCheck){
+	      					unansweredQuestions--;
+      					}
+      			}
+      			
+  				}
+			}  
+
+		// console.log(correctAnswers);
+  //   console.log(incorrectAnswers);
+  //   console.log(unansweredQuestions);
+
+    
+    $("#mainGame").html("<h4>Your Results</h4>");
+    $("#mainGame").append("<h5>Correct Answers: </h5>" + correctAnswers);
+    $("#mainGame").append("<h5>Incorrect Answers: </h5>" + incorrectAnswers);
+    $("#mainGame").append("<h5>Questions Unanswered: </h5>" + unansweredQuestions);
       }
     }
   //Execute the run funtion
@@ -63,28 +111,20 @@ $(document).ready(function(){
       			}
       			
   				}
-			}    
+			}  
 
-		
-   
-  				
-               
-        console.log(correctAnswers);
-        console.log(incorrectAnswers);
-        console.log(unansweredQuestions);
+		// console.log(correctAnswers);
+  //   console.log(incorrectAnswers);
+  //   console.log(unansweredQuestions);
 
-
-
-
-
-
-
-
-
-
-
-
+    
+    $("#mainGame").html("<h4>Your Results</h4>");
+    $("#mainGame").append("<h5>Correct Answers: </h5>" + correctAnswers);
+    $("#mainGame").append("<h5>Incorrect Answers: </h5>" + incorrectAnswers);
+    $("#mainGame").append("<h5>Questions Unanswered: </h5>" + unansweredQuestions);
 
   })
+
+
 })
                    

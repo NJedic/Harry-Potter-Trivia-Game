@@ -55,3 +55,16 @@ h1{
 	vertical-align: baseline;
 	padding-bottom: 10px;
 }
+
+/*Results*/
+h4{
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 35px;
+	padding-left: 350px;
+}
+
+h5{
+	font-family: 'Tangerine', cursive;
+	font-size: 50px;
+	padding-left: 350px;
+}
