@@ -17,15 +17,7 @@ $(document).ready(function(){
       $("#timer").html(number);
       //  Once number hits zero...
       if (number === 0) {
-      	//Stop the function
-      	stop();
-      	//...the user is brought to the results page
-      	// location.href="results.html"
-      		//Variable that holds the selected radio buttons
-       		// var selected = $("input[type=radio]:checked")
-       		// $.each(selected, function(){
-       		// 	console.log(this.value);
-       		// })
+      	// ////////////////////////////////////
       }
     }
   //Execute the run funtion
@@ -43,19 +35,20 @@ $(document).ready(function(){
   		for(var i = 1; i <= 44; i++) {
   			//setting a variable to represent the answer buttons by calling a universal name assignment
   			var buttons = $('[name="question ' + i + '"]');
+  			//Boolean to represent whether there are buttons checked
   			var hasCheck = false;
   			console.log(buttons);
   				//Looping through the individual buttons
  					for(var j = 0; j < buttons.length; j++) {
  						
  						// console.log(buttons[j]);
-
+ 						//If a button is checked..
     				if(buttons[j].checked){
+    					//Set Boolean to true
     					hasCheck = true;
     					console.log('check works');
 	    					//if the button is checked and the assigned value is "true"...
 	   						if($(buttons[j]).attr("value") == "true") {
-	      					//this.value ==
 	      					//add one to the correctAnswers
 	      					correctAnswers++;
 	      				}
@@ -63,22 +56,22 @@ $(document).ready(function(){
 	      				else{
 	      					incorrectAnswers++;
 	      				}
-	      					//otherwise, if it's unchecked, add one to the unanswered questions
-	      				
+	   
+	      				if(buttons!=hasCheck){
+	      					unansweredQuestions++;
+      					}
       			}
       			
   				}
+			}    
 
-  				// if(buttons!=hasCheck){
-	     //  					unansweredQuestions++;
-	     //  					console.log(unansweredQuestions);
-      // 					}
-			}       
+		
    
+  				
                
         console.log(correctAnswers);
         console.log(incorrectAnswers);
-        console.log(unansweredQuestions);
+        console.log(11 - unansweredQuestions);
 
 
 
