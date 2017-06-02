@@ -18,29 +18,28 @@ $(document).ready(function(){
       //  Once number hits zero...
       if (number === 0) {
       	//Set the correct answers count to zero
-  	correctAnswers = 0;
-  	//Set the incorrect answers count to zero
-  	incorrectAnswers = 0;
-  	//Set the number of unanswered questions count to zero
-  	unansweredQuestions = 11;
-  		//Loop through all of the buttons
-  		for(var i = 1; i <= 44; i++) {
-  			//setting a variable to represent the answer buttons by calling a universal name assignment
-  			var buttons = $('[name="question ' + i + '"]');
-  			//Boolean to represent whether there are buttons checked
-  			var hasCheck = false;
-  			// console.log(buttons);
-  				//Looping through the individual buttons
- 					for(var j = 0; j < buttons.length; j++) {
- 						
- 						// console.log(buttons[j]);
- 						//If a button is checked..
-    				if(buttons[j].checked){
-    					//Set Boolean to true
-    					hasCheck = true;
-    					// console.log('check works');
-	    					//if the button is checked and the assigned value is "true"...
-	   						if($(buttons[j]).attr("value") == "true") {
+  			correctAnswers = 0;
+  			//Set the incorrect answers count to zero
+  			incorrectAnswers = 0;
+  			//Set the number of unanswered questions count to zero
+  			unansweredQuestions = 11;
+  			//Loop through all of the buttons
+  			for(var i = 1; i <= 44; i++) {
+  				//setting a variable to represent the answer buttons by calling a universal name assignment
+  				var buttons = $('[name="question ' + i + '"]');
+  				//Boolean to represent whether there are buttons checked
+  				var hasCheck = false;
+  						// console.log(buttons);
+  					//Looping through the individual buttons
+ 						for(var j = 0; j < buttons.length; j++) {
+ 								// console.log(buttons[j]);
+ 							//If a button is checked..
+    					if(buttons[j].checked){
+    						//Set Boolean to true
+    						hasCheck = true;
+    							// console.log('check works');
+	    				//if the button is checked and the assigned value is "true"...
+	   					if($(buttons[j]).attr("value") == "true") {
 	      					//add one to the correctAnswers
 	      					correctAnswers++;
 	      				}
@@ -48,7 +47,7 @@ $(document).ready(function(){
 	      				else{
 	      					incorrectAnswers++;
 	      				}
-	   
+	   							//if a button is checked, minus one from the unanswered questions
 	      				if(buttons=hasCheck){
 	      					unansweredQuestions--;
       					}
@@ -104,7 +103,7 @@ $(document).ready(function(){
 	      				else{
 	      					incorrectAnswers++;
 	      				}
-	   
+	   							//if a button is checked, minus one from the unanswered questions
 	      				if(buttons=hasCheck){
 	      					unansweredQuestions--;
       					}
