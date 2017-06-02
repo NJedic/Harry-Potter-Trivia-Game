@@ -1,6 +1,6 @@
 // On document load and ready...
 $(document).ready(function(){
-	//..the timer begins to countdown from 180 seconds
+	//..the timer begins to countdown from 120 seconds
 	//First we set a variable to hold that number
 	var number = 120;
 	//Variable that holds interval ID
