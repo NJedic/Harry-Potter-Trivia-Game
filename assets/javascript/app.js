@@ -30,14 +30,14 @@ $(document).ready(function(){
   	//Set the incorrect answers count to zero
   	incorrectAnswers = 0;
   	//Set the number of unanswered questions count to zero
-  	unansweredQuestions = 0;
+  	unansweredQuestions = 11;
   		//Loop through all of the buttons
   		for(var i = 1; i <= 44; i++) {
   			//setting a variable to represent the answer buttons by calling a universal name assignment
   			var buttons = $('[name="question ' + i + '"]');
   			//Boolean to represent whether there are buttons checked
   			var hasCheck = false;
-  			console.log(buttons);
+  			// console.log(buttons);
   				//Looping through the individual buttons
  					for(var j = 0; j < buttons.length; j++) {
  						
@@ -46,7 +46,7 @@ $(document).ready(function(){
     				if(buttons[j].checked){
     					//Set Boolean to true
     					hasCheck = true;
-    					console.log('check works');
+    					// console.log('check works');
 	    					//if the button is checked and the assigned value is "true"...
 	   						if($(buttons[j]).attr("value") == "true") {
 	      					//add one to the correctAnswers
@@ -57,8 +57,8 @@ $(document).ready(function(){
 	      					incorrectAnswers++;
 	      				}
 	   
-	      				if(buttons!=hasCheck){
-	      					unansweredQuestions++;
+	      				if(buttons=hasCheck){
+	      					unansweredQuestions--;
       					}
       			}
       			
@@ -71,7 +71,7 @@ $(document).ready(function(){
                
         console.log(correctAnswers);
         console.log(incorrectAnswers);
-        console.log(11 - unansweredQuestions);
+        console.log(unansweredQuestions);
 
 
 
