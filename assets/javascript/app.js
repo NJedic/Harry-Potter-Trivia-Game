@@ -2,7 +2,7 @@
 $(document).ready(function(){
 	//..the timer begins to countdown from 180 seconds
 	//First we set a variable to hold that number
-	var number = 15;
+	var number = 120;
 	//Variable that holds interval ID
 	var intervalID;
 	//The run function sets an interval that runs the decrement function once a second
