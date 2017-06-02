@@ -56,11 +56,10 @@ $(document).ready(function(){
   				}
 			}  
 
-		// console.log(correctAnswers);
-  //   console.log(incorrectAnswers);
-  //   console.log(unansweredQuestions);
+  	//Return to the to top of the window
+    window.scrollTo(0, 0);
 
-    
+    //Render results to the DOM
     $("#mainGame").html("<h4>Your Results</h4>");
     $("#mainGame").append("<h5>Correct Answers: </h5>" + correctAnswers);
     $("#mainGame").append("<h5>Incorrect Answers: </h5>" + incorrectAnswers);
@@ -112,11 +111,10 @@ $(document).ready(function(){
   				}
 			}  
 
-		// console.log(correctAnswers);
-  //   console.log(incorrectAnswers);
-  //   console.log(unansweredQuestions);
+		//Return to the top of the window
+    window.scrollTo(0, 0);
 
-    
+    //Render results to the DOM
     $("#mainGame").html("<h4>Your Results</h4>");
     $("#mainGame").append("<h5>Correct Answers: </h5>" + correctAnswers);
     $("#mainGame").append("<h5>Incorrect Answers: </h5>" + incorrectAnswers);
