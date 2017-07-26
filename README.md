@@ -32,18 +32,22 @@ A timed trivia game that simulates a Hogwarts Student’s NEWT level Potions Exa
 ## Application Preview
 
 * Landing Page:
+
 Click on the button after the description of the app to start the test.
 ![App Landing Page](/assets/images/triviaGame1.jpg)
 
 * Countdown Timer:
+
 You have two minutes to answer all of the questions. Watch your timer!
 ![App Screen One](/assets/images/triviaGame2.jpg)
 
 * Submit Button:
+
 Once you've answered all the questions (that you're capable of answering, that is), click the submit button near the bottom of the scroll.
 ![Submit Button](/assets/images/triviaGame3.jpg)
 
-* Tallying of Answers
+* Tallying of Answers:
+
 Once your answers have been submitted, watch as the application scores your responses!
 ![Tallying of Answers](/assets/images/triviaGame4.jpg)
 
