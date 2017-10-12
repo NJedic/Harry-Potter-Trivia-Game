@@ -26,7 +26,7 @@ $(document).ready(function(){
   			//Loop through all of the buttons
   			for(var i = 1; i <= 44; i++) {
   				//setting a variable to represent the answer buttons by calling a universal name assignment
-  				var buttons = $('[name="question ' + i + '"]');
+  				var buttons = $('[name="question' + i + '"]');
   				//Boolean to represent whether there are buttons checked
   				var hasCheck = false;
   						// console.log(buttons);
@@ -80,7 +80,7 @@ $(document).ready(function(){
   		//Loop through all of the buttons
   		for(var i = 1; i <= 44; i++) {
   			//setting a variable to represent the answer buttons by calling a universal name assignment
-  			var buttons = $('[name="question ' + i + '"]');
+  			var buttons = $('[name="question' + i + '"]');
   			//Boolean to represent whether there are buttons checked
   			var hasCheck = false;
   			// console.log(buttons);
